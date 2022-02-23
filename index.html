@@ -4,52 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="calc.css">
+    <title>To do list</title>
+    <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-    <div class="frameCalc"> 
-            <p class="number">1,258.2</p>
-        <!-- первый ряд кнопок -->
-        <div class="buttoncontainer"> 
-            <button class="zero" style="width: 153.33px; height: 72px;">C</button>
-            <button class="graydelete"><img src="img/delete.png" alt=""></button>
-            <button class="bluebutton">÷</button>
-        </div>
-        <!-- второй ряд кнопок -->
-        <div class="buttoncontainer"> 
-            <button class="graybutton">7</button>
-            <button class="graybutton">8</button>
-            <button class="graybutton">9</button>
-            <button class="bluebutton">×</button>
+    <h1 class="h1">My Todo List</h1>
+    <div class="container">
+        <p class="title">HIGH</p>
+        <div id="HighPriority">  
+            <div class="task high">
+            <input id="inputHigh" type="text" class="input" name="newTask" placeholder="Добавить важных дел">
+            <img src="img/add.png" alt="" class="addImg">
+            </div>
+            <div class="task high" id="divHigh">
+            <input type="checkbox" name="check"> 
+            <div class="text">Вот вам и супер интересная тема. Вы наверняка заметили что ваши файлы с кодом становятся все объемнее, что хочется вынести некоторые вещи куда-то за пределы основной программы</div>
+            <img src="img/delete.png" alt="" class="deleteTaskImg">
+            </div>
+            <div class="task high">
+            <input type="checkbox" name="check">
+            <div class="text">Сверстать этот TODO list</div>
+            <img src="img/delete.png" alt="" class="deleteTaskImg">
+            </div>
+            <div class="task high">
+            <input type="checkbox" name="check">
+            <div class="text">Начать делать задачу</div>
+            <img src="img/delete.png" alt="" class="deleteTaskImg">
+            </div>
 
-        </div> 
-        <!-- третий ряд кнопок -->
-        <div class="buttoncontainer"> 
-            <button class="graybutton">4</button>
-            <button class="graybutton">5</button>
-            <button class="graybutton">6</button>
-            <button class="bluebutton">-</button>
-        </div> 
-        <!-- четвертый ряд кнопок -->
-        <div class="buttoncontainer"> 
-            <button class="graybutton">1</button>
-            <button class="graybutton">2</button>
-            <button class="graybutton">3</button>
-            <button class="bluebutton">+</button>
-        </div> 
-        <!-- пятый ряд кнопок -->
-        <div class="buttoncontainer"> 
-            <button class="graybuttonzero" style="width: 238.33px;">0</button>
-            <button class="bluebutton">=</button>
-        </div> 
+        </div>    
+        <p class="title">LOW</p>
+
+        <div id="lowPriority">
+            <div class="task low">
+                <input id="inputLow" type="text" class="input" name="newTask" placeholder="Добавить неважных дел">
+                <img src="img/add.png" alt="" class="addImg">
+            </div>
+            <div id="divLow" class="task low">
+                <input type="checkbox" name="check"> 
+                <div class="text">Посмотреть ютубчик</div>
+                <img src="img/delete.png" alt="" class="deleteTaskImg">
+            </div>
+        </div>
+
+    <br>
+     <br>
+     <hr>
+        <p class="title">DONE</p>
+
+        <div id="doneTasks">
+            <div class="taskDone">
+                <input type="checkbox" checked name="TaskDone"><div class="text">Поработать</div>
+                <img src="img/return.png" alt="" class="returnTaskImg">
+            </div>
+        </div>   
+        
+
+
+
 
 
 
     </div>
+
+<script src="script.js"></script>
 </body>
 </html>

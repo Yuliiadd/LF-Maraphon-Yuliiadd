@@ -1,0 +1,142 @@
+\\ ОБНУЛЯЮЩИЕ СТИЛИ
+
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+
+
+
+
+
+
+.h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-left: 165px;
+}
+
+.container {
+    width: 476px;
+    height: 688px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    outline: 2px solid rgb(139, 137, 137);
+    padding: 3px 10px;
+    border-radius: 30px;
+  /*   background-image: url(img/bg.jpeg); */
+   
+}
+
+.title {
+    text-align: center;
+}
+
+.high {
+box-shadow: 0px 0px 10px 1px rgba(163, 108, 250, 0.2);
+/* background-color: rgb(230, 219, 253); */
+}
+
+.low {
+    /* background-color: rgb(243, 237, 253); */
+    box-shadow: 0px 0px 10px 1px rgba(219, 206, 19, 0.2);
+}
+
+.task {
+    margin: 7px;
+    border: 1px solid rgb(107, 105, 105);
+    border-radius: 6px;
+    padding: 10px 10px;
+    display: flex;
+    background-color: white
+    
+    
+
+}
+.taskDone {
+    margin: 7px;
+    border: 1px solid rgb(107, 105, 105);
+    border-radius: 6px;
+    padding: 10px 10px;
+    display: flex;
+    text-decoration: line-through;
+    background-color: rgb(226, 226, 226);
+    color: rgb(161, 161, 161);
+    box-shadow: 0px 0px 10px 4px rgba(92, 92, 92, 0.2);
+    
+
+}
+.text {
+    padding-left: 25px;
+    padding-right: 10px;
+    vertical-align: top;
+    width: 100%;
+    
+}
+
+.input {
+    font-size: 16px;
+    width: 100%; 
+    border-style: none;
+    
+}
+input::-webkit-input-placeholder {
+    color: rgb(185, 185, 185);
+   }
+   
+.addImg {
+    padding-top: 2px;
+    width: 19px;
+    height: 19px;
+    
+}
+.deleteTaskImg {
+    width: 15px;
+    height: 15px;
+}
+
+.returnTaskImg {
+    width: 16px;
+    height: 16px;
+}
+
